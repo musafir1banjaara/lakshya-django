@@ -1,20 +1,10 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Job
 
 
 
-jobs = [
-       { "title" : "Frontend Developer", 
-         "company" : "Google", 
-         "location" : "Remote", 
-         "salary" : "$120k" 
-       },
-       { "title" : "Product Designer",
-         "company" : "Figma", 
-         "location" : "San Francisco, CA", 
-         "salary" : "$135k" 
-        }
-        ]
+jobs = Job.objects.all()
 
 # Create your views here.
 def home(request):
