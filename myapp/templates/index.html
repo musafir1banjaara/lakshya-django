@@ -52,9 +52,9 @@
             <p class="text-slate-500">No jobs posted yet. Click "Add Job" to get started.</p>
         </div>
     </main>
-    <ul>
+    <ul class="space-y-4 p-8">
         {% for job in jobs %}
-        <li>{{job}}</li>
+        <li class="w-[30rem] bg-neutral-200 rounded-lg ">{{job.title}}  {{job.company_name}}  {{job.location}}  {{job.salary}}</li>
         {% endfor %}
     </ul>
 
