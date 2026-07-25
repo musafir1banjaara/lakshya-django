@@ -52,6 +52,11 @@
             <p class="text-slate-500">No jobs posted yet. Click "Add Job" to get started.</p>
         </div>
     </main>
+    <ul>
+        {% for job in jobs %}
+        <li>{{job}}</li>
+        {% endfor %}
+    </ul>
 
 </body>
 
